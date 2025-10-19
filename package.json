@@ -1,0 +1,42 @@
+{
+  "name": "the-last-of-us-landing",
+  "version": "1.0.0",
+  "description": "Landing page profissional The Last of Us com HTML, Bootstrap, SASS e Gulp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp dev",
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "clean": "gulp clean",
+    "styles": "gulp styles",
+    "scripts": "gulp scripts",
+    "images": "gulp images"
+  },
+  "keywords": [
+    "landing-page",
+    "gulp",
+    "sass",
+    "bootstrap",
+    "the-last-of-us"
+  ],
+  "author": "Eliel Filho",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.1"
+  }
+}

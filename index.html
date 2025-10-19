@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last of Us - Landing Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- App CSS (compilado pelo Gulp) -->
+    <link href="./dist/css/styles.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content container">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="hero-title">
+                    THE LAST <span class="red-text">OF US</span>
+                </h1>
+                <div class="hero-divider"></div>
+                <p class="hero-subtitle">Sobreviva. Adapte-se. Conecte-se.</p>
+            </div>
+
+            <div class="btn-group-hero d-flex gap-3 justify-content-center flex-wrap" data-aos="fade-up"
+                data-aos-delay="200">
+                <button class="btn btn-primary-custom btn-lg rounded-3">
+                    <i class="bi bi-play-fill me-2"></i>JOGAR AGORA
+                </button>
+                <button class="btn btn-outline-custom btn-lg rounded-3">
+                    ASSISTIR TRAILER
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="bi bi-chevron-down text-white" style="font-size: 2rem;"></i>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                Uma Jornada <span class="text-red">Inesquecível</span>
+            </h2>
+
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h3 class="feature-title">Narrativa Profunda</h3>
+                        <p class="feature-desc">
+                            Uma história emocionante sobre sobrevivência e conexão humana
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-controller"></i>
+                        </div>
+                        <h3 class="feature-title">Jogabilidade Intensa</h3>
+                        <p class="feature-desc">
+                            Combate estratégico e furtividade em um mundo pós-apocalíptico
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-trophy-fill"></i>
+                        </div>
+                        <h3 class="feature-title">Premiado</h3>
+                        <p class="feature-desc">
+                            Mais de 200 prêmios Game of the Year conquistados
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section" id="galeria">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                Momentos <span class="text-red">Icônicos</span>
+            </h2>
+            <div id="tlouCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="100">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#tlouCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#tlouCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner rounded-4 overflow-hidden shadow-lg">
+                    <div class="carousel-item active">
+                        <img src="./dist/images/tlou2.jpg" class="d-block w-100" alt="The Last of Us 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Uma Jornada de Sobrevivência</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./dist/images/tlou22.jpg" class="d-block w-100" alt="The Last of Us 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Laços que nos Mantêm Humanos</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#tlouCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#tlouCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media (YouTube) Section -->
+    <section class="media-section" id="trailer">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                Assista ao <span class="text-red">Trailer</span>
+            </h2>
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-10">
+                    <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-lg">
+                        <iframe src="https://www.youtube.com/embed/W01L70IGBgE" title="The Last of Us Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                Perguntas <span class="text-red">Frequentes</span>
+            </h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqOneHeading">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                                    O jogo é somente single-player?
+                                </button>
+                            </h2>
+                            <div id="faqOne" class="accordion-collapse collapse show" aria-labelledby="faqOneHeading" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The Last of Us é focado em narrativa single-player. Há versões com modos extras dependendo da edição.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqTwoHeading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                                    Roda no meu PC/Console?
+                                </button>
+                            </h2>
+                            <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="faqTwoHeading" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Verifique os requisitos oficiais da sua plataforma. Otimizado para consoles PlayStation e versão PC compatível conforme especificações.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqThreeHeading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                                    Há acessibilidade?
+                                </button>
+                            </h2>
+                            <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="faqThreeHeading" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sim, possui robustas opções de acessibilidade para áudio, visual e controles, garantindo melhor experiência a todos.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section" id="story">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="section-title text-start">
+                        A História de <span class="text-red">Joel e Ellie</span>
+                    </h2>
+                    <p class="lead mb-4" style="color: var(--gray-light);">
+                        Em um mundo devastado por uma pandemia, Joel, um sobrevivente endurecido,
+                        é contratado para contrabandear Ellie, uma garota de 14 anos, para fora de
+                        uma zona de quarentena opressiva.
+                    </p>
+                    <p class="mb-4" style="color: var(--gray-light);">
+                        O que começa como um pequeno trabalho logo se transforma em uma jornada
+                        brutal através dos Estados Unidos, onde ambos devem confiar um no outro
+                        para sobreviver.
+                    </p>
+
+                    <div class="row mt-5">
+                        <div class="col-4">
+                            <div class="stat-box">
+                                <div class="stat-number">200+</div>
+                                <div class="stat-label">GOTY Awards</div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-box">
+                                <div class="stat-number">17M+</div>
+                                <div class="stat-label">Cópias Vendidas</div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-box">
+                                <div class="stat-number">10/10</div>
+                                <div class="stat-label">Metacritic</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="story-image">
+                        <img src="./dist/images/tlou22.jpg" alt="The Last of Us" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                Aclamado pela <span class="text-red">Crítica</span>
+            </h2>
+
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text">
+                            "Uma obra-prima do entretenimento interativo"
+                        </p>
+                        <div class="review-footer">
+                            <span class="review-author">IGN</span>
+                            <span class="review-score">10/10</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text">
+                            "Narrativa cinematográfica perfeita"
+                        </p>
+                        <div class="review-footer">
+                            <span class="review-author">GameSpot</span>
+                            <span class="review-score">10/10</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text">
+                            "Experiência inesquecível"
+                        </p>
+                        <div class="review-footer">
+                            <span class="review-author">Polygon</span>
+                            <span class="review-score">9.5/10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div data-aos="fade-up">
+                <h2 class="cta-title">
+                    Pronto para <span class="text-red">Sobreviver?</span>
+                </h2>
+                <p class="cta-subtitle">
+                    Junte-se a milhões de jogadores na jornada mais emocionante do gaming
+                </p>
+                <button class="btn btn-cta btn-lg rounded-3">
+                    <i class="bi bi-play-fill me-2"></i>COMEÇAR AVENTURA
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="mb-2">© 2024 Naughty Dog. The Last of Us é marca registrada da Sony Interactive Entertainment.</p>
+            <p class="small mb-0">Desenvolvido por fãs para demonstração.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- App JS (compilado pelo Gulp) -->
+    <script src="./dist/js/main.min.js"></script>
+</body>
+
+</html>
